@@ -394,6 +394,10 @@ Description:	If enabled, this will store the user returned by CAS in the specifi
 		This is in addition to the REMOTE_USER environment variable, which is
 		always set to the CAS user.
 
+		This directive takes the name of the CAS attribute to be added to the header,
+		such as "CASAuthNHeader firstname", and can be specified multiple times for
+		multiple attributes.
+
 Directive:	CASSSOEnabled
 Default:	Off
 Description:	If enabled, this activates support for Single Sign Out within the CAS
